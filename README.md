@@ -9,7 +9,7 @@ Optionally, the code allows optimizing them at the CCSD(T)-level with a pre-trai
 To use this package, first clone the repository and install it under your virtual environment using pip:
 
 ```
-git clone git@github.com:dskoda/conformers.git
+git clone https://github.com/digital-synthesis-lab/conformers.git
 cd conformers
 pip install -e .
 ```
