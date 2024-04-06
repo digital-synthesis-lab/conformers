@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conformers"
+version = "0.1.0"
+description = "script to generate conformers using rdkit"
+authors = [{name = "Daniel Schwalbe-Koda", email = "dskoda@ucla.edu"}]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["materials-science", "chemistry"]
+dependencies = [
+    "rdkit",
+    "torchani",
+    "tqdm",
+    "click",
+    "ase"
+]
+
+[tool.setuptools]
+packages = ["conformers"]
+
+[project.scripts]
+flask_conf = "conformers.cli.conf:conformers"
